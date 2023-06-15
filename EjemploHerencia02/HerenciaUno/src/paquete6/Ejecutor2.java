@@ -40,7 +40,8 @@ public class Ejecutor2 {
             double costoCredito = entrada.nextDouble();
             entrada.nextLine();
             
-            EstudiantePresencial estudianteP = new EstudiantePresencial(nombre, apellido, identificación, edad, costoCredito, numeroCreditos);
+            EstudiantePresencial estudianteP = new EstudiantePresencial(nombre, 
+                    apellido, identificación, edad, costoCredito, numeroCreditos);
             
             cadena = String.format("%s%s\n", cadena, estudianteP);
             
