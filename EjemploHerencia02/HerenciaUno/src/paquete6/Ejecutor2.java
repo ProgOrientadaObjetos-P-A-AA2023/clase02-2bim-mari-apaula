@@ -19,15 +19,33 @@ public class Ejecutor2 {
         // Debe existir 1 sola impresión de todos los estudiantes presenciales
         // No usar arreglos
         
-        // Trabajo clases 16 junio 2022
+        // Trabajo clases 15 junio 2023
         Scanner entrada = new Scanner(System.in);
         boolean bandera = true;
         String cadena = "";
         
         while(bandera){
-            System.out.println("ingresa un saludo");
-            String saludo = entrada.nextLine();
-            cadena = String.format("%s%s\n", cadena, saludo);
+            System.out.println("Ingrese un estudiente de tipo precencial");
+            System.out.println("Ingresa su nombre");
+            String nombre = entrada.nextLine();
+            System.out.println("Ingresa su apellido");
+            String apellido = entrada.nextLine();
+            System.out.println("Ingresa su identificacion");
+            String identificación = entrada.nextLine();
+            System.out.println("Ingresa su edad");
+            int edad = entrada.nextInt();
+            System.out.println("Ingrese el numero Creditos");
+            int numeroCreditos = entrada.nextInt();
+            System.out.println("Ingrese el costo de Creditos");
+            double costoCredito = entrada.nextDouble();
+            entrada.nextLine();
+            
+            EstudiantePresencial estudianteP = new EstudiantePresencial(nombre, apellido, identificación, edad, costoCredito, numeroCreditos);
+            
+            cadena = String.format("%s%s\n", cadena, estudianteP);
+            
+            
+            
             System.out.println("Desea salir, pulse S");
             String opcion = entrada.nextLine();
             if(opcion.equals("S")){
