@@ -25,5 +25,9 @@ public class Ejecutor {
         System.out.println(estDistancia);
                 
         
+        
+        EstudiantePresencial estPrecencial = new EstudiantePresencial("Lola", "Juarez", "12646465", 23);
+        
+        System.out.println(estPrecencial);
     }
 }
